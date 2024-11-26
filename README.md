@@ -1,5 +1,5 @@
 ## El proyecto:
- `está basado en Express y utiliza JWT para la gestión de usuarios. La base de datos es MongoDB, y se puede usar MongoDB Atlas o una instalación local, integrada con Mongoose. He creado dos API: una para crear un usuario y otra para consultar los datos del usuario creado.`
+ `Está basado en Express y utiliza JWT para la gestión de usuarios. La base de datos es MongoDB, que puede ser utilizada a través de MongoDB Atlas o una instalación local, integrada con Mongoose. He creado dos APIs: una para crear usuarios y otra para consultar los datos de los usuarios. La base de datos ya está integrada para facilitar la gestión; solo es necesario levantar el proyecto para que funcione.`
 
 - Levantar con `npm run start` que tiene nodemon.
 - **API para consultar los users**
