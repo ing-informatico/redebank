@@ -5,10 +5,10 @@ const { getUsers, createUser } = require('../controllers/userController');
 const router = express.Router();
 
 //ver todos los usuarios
-router.get('/users', getUsers);
+router.get('/', getUsers);
 
 // Crear usuario
-router.post('/new', [
+router.post('/', [
     check('name', 'El nombre es obligatorio').not().isEmpty(),
     check('email')
         .notEmpty().withMessage('El correo electrónico es obligatorio')

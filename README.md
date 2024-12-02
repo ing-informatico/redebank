@@ -3,11 +3,11 @@
 
 - Levantar con `npm run start` que tiene nodemon.
 - **API para consultar los users**
-    * http://localhost:3000/api/users/users
+    * http://localhost:3000/api/users
 
 
 - **API para crear los users**
-    * http://localhost:3000/api/users/new
+    * http://localhost:3000/api/users
 
 - **Datos para crear un user**
     * `
