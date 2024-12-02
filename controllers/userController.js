@@ -30,7 +30,6 @@ const getUsers = async (req, res) => {
 
 // Crear usuario
 const createUser = async (req, res) => {
-
     try {
         const { name, email, password } = req.body;
         const user = await User.findOne({ email });
@@ -40,7 +39,6 @@ const createUser = async (req, res) => {
                 msg: 'El usuario ya existe'
             });
         }
-
 
         const salt = bcrypt.genSaltSync();
         const passwordHash = bcrypt.hashSync(password, salt);
@@ -54,7 +52,11 @@ const createUser = async (req, res) => {
         res.status(201).json({
             ok: true,
             msg: 'User Created',
-            newUser,
+            newUser: {
+                name: newUser.name,
+                email: newUser.email,
+                password: "**************"
+            },
             token
         });
 
